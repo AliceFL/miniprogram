@@ -1,0 +1,11 @@
+<!--pages/developer/developerPlan/plan.wxml-->
+<view class='container'>
+  <view class="title-wrap">
+    <image class="line-img" src="/assets/line1.png" background-size="100% 100%"></image>
+    <text class="title">发展人计划</text>
+    <image class="line-img" src="/assets/line2.png" background-size="100% 100%"></image>
+  </view>
+  <view class="content-text">
+    <text>好友通过用户分享的任意页面进入小程序完成充值即可成为发展人，用户可在个人中心发展人入口查看发展人活动进度。</text>
+  </view>
+</view>

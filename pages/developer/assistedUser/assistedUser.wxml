@@ -1,0 +1,20 @@
+<!--pages/developer/assistedUser/assistedUser.wxml-->
+<view class="container">
+  <view class="swiper">
+    <navigator url="/pages/activity/activity">
+      <image class="swiper-img" src="/assets/swiper.png" background-size="cover"></image>
+    </navigator>
+  </view>
+  <view class="progress-wrap">
+    <view>
+      <image class="pro-active" src="/assets/yuan.png" background-size="100%"></image>
+    </view>
+    <view>
+       <image class="pro-line" src="/assets/line-active.png" background-size="100%"></image>
+    </view>
+    <view>
+      <image class="pro-unactive" src="/assets/yuan-2.png" background-size="100%" style=""></image>
+    </view>
+    
+  </view>
+</view>

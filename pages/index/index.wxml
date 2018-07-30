@@ -1,0 +1,136 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="swiper">
+    <navigator url="/pages/activity/activity">
+      <image class="swiper-img" src="/assets/swiper.png" background-size="cover"></image>
+    </navigator>
+    <navigator url="/pages/developer/developerPlan/plan">
+      <image class="swiper-tab" src="/assets/tab.png" background-size="cover"></image>
+    </navigator>
+  </view>
+  <!--滚动文字-->
+  <!-- <view class="example">
+    <view class="marquee_box">
+    <image class="gundong-img" src="/assets/horn.png" background-size="cover"></image>
+      <view class="marquee_text" style="{{orientation}}:{{marqueeDistance2}}px;font-size: {{size}}px;">
+        <text>{{text}}</text>
+        <text wx:if="{{marquee2copy_status}}" style="margin-left:{{marquee2_margin}}px;">{{text}}</text>
+      </view>
+    </view>
+  </view> -->
+
+  <view class="content-wrap">
+    <!-- 五灯 -->
+    <view class="progress-wrap">
+      <view>
+        <image class="" src="/assets/bright.png" background-size="100%" style="width:94rpx;height:87rpx"></image>
+        <image class="" src="/assets/line-active.png" background-size="100%" style="width:55rpx;height:4rpx"></image>
+        <image class="" src="/assets/bright.png" background-size="100%" style="width:94rpx;height:87rpx"></image>
+        <image class="" src="/assets/drk.png" background-size="100%" style="width:58rpx;height:67rpx;margin-bottom:20rpx;"></image>
+        <image class="" src="/assets/drk.png" background-size="100%" style="width:58rpx;height:67rpx;margin-bottom:20rpx;"></image>
+        <image class="" src="/assets/drk.png" background-size="100%" style="width:58rpx;height:67rpx;margin-bottom:20rpx;"></image>
+      </view>
+
+    </view>
+    <!-- 抽奖 -->
+    <view class="award-wrap">
+      <image class="award-img" src="/assets/cotvp.gif" background-size="cover"></image>
+      <text class="award-text">您还有<text class="count">4</text>次抽奖机会哦~</text>
+    </view>
+    <!-- 王卡 -->
+    <view class="product-wrap">
+      <view class="product">
+        <navigator url="/pages/gundong/gundong">
+          <image class="product1-img" src="/assets/product1.png" background-size="cover"></image>
+        </navigator>
+        <navigator url="/pages/tankuang/tankuang">
+          <image class="product-img" src="/assets/product2.png" background-size="cover"></image>
+        </navigator>
+      </view>
+    </view>
+  </view>
+</view>
+
+<!-- 弹出框 -->
+<view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{showInterModal}}"></view>
+<view class="modal-dialog" wx:if="{{showInterModal}}">
+  <view class="modal-title1">
+    <view>集五灯</view>
+    <view>抽8888元现金红包</view>
+  </view>
+  <view class='modal-btn'>
+    <button class="btn" bindtap="onInter">我要参加</button>
+  </view>
+</view>
+<!-- 关注 -->
+<view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{showOnfoucsModal}}"></view>
+<view class="modal-dialog" wx:if="{{showOnfoucsModal}}">
+  <view class="modal-title1">
+    <view>您还没有关注“种草家”微信公众号</view>
+    <view>请先关注哦！</view>
+  </view>
+  <view class="modal-focus">
+    <view>关注步骤：</view>
+    <view>1.点击右上角<image class="modal-img" src="/assets/icon.png" background-size="100% 100%"></image>选择<text class="modal-sign">【关于种草家】</text></view>
+    <view>2.点击<text class="modal-sign">【相关公众号】</text></view>
+    <view>3.关注公众号后，点击 <text class="modal-sign">【进入公众号】</text></view>
+  </view>
+</view>
+<!-- 下单 -->
+<view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{showOrderModal}}"></view>
+<view class="modal-dialog" wx:if="{{showOrderModal}}">
+  <view class="modal-title2">
+    <view>您还没有达到提现条件</view>
+    <view>请先完成“下单-激活-充值”哦</view>
+    <view class="modal-content1">
+      <text>
+        <text class="modal-label">戳这里</text>，立即下单
+      </text>
+    </view>
+  </view>
+</view>
+<!-- 激活 -->
+<view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{showActivationModal}}"></view>
+<view class="modal-dialog" wx:if="{{showActivationModal}}">
+  <view class="modal-title2">
+    <view>您还没有达到提现条件</view>
+    <view>请先完成“激活-充值”哦</view>
+    <view class="modal-content1">
+      <text>
+        <text class="modal-label">戳这里</text>，立即激活
+      </text>
+    </view>
+  </view>
+</view>
+<!-- 充值 -->
+<view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{showRechargeModal}}"></view>
+<view class="modal-dialog" wx:if="{{showRechargeModal}}">
+  <view class="modal-title2">
+    <view>您还没有达到提现条件</view>
+    <view>请先完成“充值”哦</view>
+    <view class="modal-content1">
+      <text>
+        <text class="modal-label">戳这里</text>，立即激活
+      </text>
+    </view>
+  </view>
+</view>
+<!-- 邀好友 -->
+<view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{showMoneyModal}}"></view>
+<view class="modal-dialog" wx:if="{{showMoneyModal}}">
+  <view class="modal-title2">
+    <view>恭喜您，0.5元现金红包已到账！</view>
+    <navigator url="/pages/perCenter/perCenter">
+      <view>
+        <text class="modal-label">戳这里</text>，申请提现。
+      </view>
+    </navigator>
+    
+    <view class="modal-content1">
+      <navigator url="/pages/developer/assistedUser/assistedUser">
+        <text class="modal-label">戳这里</text>，邀请5位好友助力，
+      </navigator>
+      <view>还可以再领2.5元哦！</view>
+    </view>
+  </view>
+</view>

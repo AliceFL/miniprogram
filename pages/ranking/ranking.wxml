@@ -1,0 +1,30 @@
+ <!-- pages/ranking/ranking.wxml -->
+<view class="container">
+  <view class="title-wrap">
+    <image class="line-img" src="/assets/line1.png" background-size="100% 100%"></image>
+    <text class="title">排行榜</text>
+    <image class="line-img" src="/assets/line2.png" background-size="100% 100%"></image>
+  </view>
+  <!-- 排行榜 -->
+  <view class='list-wrap'>
+    <view class="list-item">
+        <block wx:for='{{aa}}'>
+          <view class='content-item'>
+              <text class='index'>{{index}}</text>
+              <text class='name'>{{item.nickName}}</text>
+              <text class='huode'>已获得</text>
+              <text class='huode'>{{item.reward}}</text>
+              <text class='wawa'>元</text>
+          </view>
+        </block>  
+    </view>
+  </view>
+  <!-- 按钮 -->
+</view>
+<view>
+  <image class="rankbtn" src="/assets/rankbtn.png" background-size="100% 100%"></image>
+  <text class="btn-text">我已瓜分{{myMoney}}元，排名{{ranking}}</text>
+</view>
+
+  
+

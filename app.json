@@ -1,0 +1,45 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/ranking/ranking",
+    "pages/perCenter/perCenter",
+    "pages/gundong/gundong",
+    "pages/tankuang/tankuang",
+    "pages/activity/activity",
+    "pages/developer/developerPlan/plan",
+    "pages/developer/assistedUser/assistedUser"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+
+
+  "tabBar": {
+    "color": "#000",
+    "selectedColor": "#127ec4",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "assets/Unselected-home-page.png",
+        "selectedIconPath": "assets/Select-home-page.png"
+      },
+      {
+        "pagePath": "pages/ranking/ranking",
+        "text": "排行榜",
+        "iconPath": "assets/Unselected-ranking-list.png",
+        "selectedIconPath": "assets/Select-list.png"
+      },
+      {
+        "pagePath": "pages/perCenter/perCenter",
+        "text": "个人中心",
+        "iconPath": "assets/Unselected-personal-center.png",
+        "selectedIconPath": "assets/Select-personal-center.png"
+      }
+    ]
+  }
+}

@@ -1,0 +1,218 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  color: #333;
+  /* display: flex;
+  flex-direction: column; */
+   /* align-items: center;  */
+  /* justify-content: space-between; */
+  /* padding: 200rpx 0; */
+  /* box-sizing: border-box; */
+} 
+/* 活动介绍等标题 */
+.title-wrap {
+  text-align: center;
+  font-size: 34rpx;
+  color: #333;
+  padding: 10rpx;
+}
+.title {
+  padding: 0 15rpx
+}
+.line-img {
+  width: 91rpx;
+  height: 1rpx;
+  margin-bottom: 5px;
+}
+
+.content-text {
+  padding: 10rpx 62rpx;
+  font-size: 34rpx;
+  line-height: 54rpx
+}
+
+/* 弹框样式 */
+.show-btn {
+
+  margin-top: 100rpx;
+
+  color: #22cc22;
+
+}
+
+.modal-mask {
+
+  width: 100%;
+
+  height: 100%;
+
+  position: fixed;
+
+  top: 0;
+
+  left: 0;
+
+  background: #000;
+
+  opacity: 0.5;
+
+  overflow: hidden;
+
+  z-index: 9000;
+
+  color: #fff;
+
+}
+
+.modal-dialog {
+
+  width: 540rpx;
+
+  overflow: hidden;
+
+  position: fixed;
+
+  top: 50%;
+
+  left: 0;
+
+  z-index: 9999;
+
+  background: #f9f9f9;
+
+  margin: -180rpx 105rpx;
+
+  border-radius: 12rpx;
+  border-bottom: 8rpx solid #209bd4
+
+}
+
+.modal-title1 {
+  padding: 60rpx 0 50rpx 0;
+  font-size: 32rpx;
+  color: #333;
+  text-align: center;
+
+}
+
+.modal-title2 {
+  padding: 100rpx 0 100rpx 0;
+  font-size: 32rpx;
+  color: #333;
+  text-align: center;
+  line-height: 55rpx
+
+}
+
+.modal-btn {
+  margin-bottom:40rpx;
+}
+.btn {
+  background: #209bd4;
+  color: #fff;
+  width: 80%;
+  line-height:40px;
+}
+
+.modal-content {
+  padding: 50rpx 32rpx;
+}
+
+.modal-content1 {
+  margin-top: 50rpx
+}
+
+.modal-label {
+  color: #209bd4;
+  border-bottom: 1rpx solid #209bd4
+}
+.modal-input {
+  display: flex;
+  background: #fff;
+  border: 2rpx solid #ddd;
+  border-radius: 4rpx;
+  font-size: 28rpx;
+}
+
+.input {
+  width: 100%;
+
+  height: 82rpx;
+
+  font-size: 28rpx;
+
+  line-height: 28rpx;
+
+  padding: 0 20rpx;
+
+  box-sizing: border-box;
+
+  color: #333;
+
+}
+
+input-holder {
+
+  color: #666;
+
+  font-size: 28rpx;
+
+}
+
+.modal-footer {
+
+  display: flex;
+
+  flex-direction: row;
+
+  height: 86rpx;
+
+  border-top: 1px solid #dedede;
+
+  font-size: 34rpx;
+
+  line-height: 86rpx;
+
+}
+
+.btn-cancel {
+
+  width: 50%;
+
+  color: #666;
+
+  text-align: center;
+
+  border-right: 1px solid #dedede;
+
+}
+
+.btn-confirm {
+
+  width: 50%;
+
+  color: #ec5300;
+
+  text-align: center;
+
+}
+
+.modal-focus {
+  background: #209bd4;
+  padding: 40rpx;
+  margin: 10rpx 35rpx 60rpx 35rpx;
+  border-radius: 12rpx;
+}
+.modal-focus>view {
+  color: #fff;
+  font-size: 22rpx;
+  line-height: 40rpx
+}
+.modal-focus>view .modal-img {
+  width: 50rpx;
+  height: 20rpx;
+  padding: 0 5rpx;
+}
+.modal-sign {
+  color: #e9d72b
+}

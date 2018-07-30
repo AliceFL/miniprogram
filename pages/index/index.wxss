@@ -1,0 +1,120 @@
+/**index.wxss**/
+page {
+  background-color: #f5f5f5;
+}
+.swiper {
+  position: relative;
+  width: 100%;
+}
+
+.swiper-img {
+  width: 100%;
+  height: 380rpx;
+}
+.swiper-tab {
+  position: absolute;
+  top: 0;
+  right: 20rpx;
+  width: 44rpx;
+  height: 209rpx;
+}
+
+/*头部滚动文字样式*/
+#gundongAreaMain {
+  padding: 0 80rpx;
+}
+#gundong {
+  overflow:hidden;
+  font-size: 20rpx;
+  height: auto;
+  color: #333333;
+    
+}
+
+.gundong-img {
+  width: 22rpx;
+  height: 19rpx
+}
+#gundongAreaMain1 {
+  float: left;
+  width: 1000%;  
+}
+
+#gundongAreaMain2 li, #gundongAreaMain3 li {
+  padding-left: 10rpx;
+  padding-right: 30rpx;
+}
+
+.content-wrap {
+  padding: 0 20rpx;
+}
+
+.progress-wrap {
+  background-color: #fff;
+  display: flex;
+  display: -webkit-flex;
+}
+
+/* 抽奖 */
+.award-wrap {
+  position: relative;
+  margin-bottom: 30rpx
+}
+.award-img {
+  width: 100%;
+  height: 160rpx
+}
+.award-text {
+  position: absolute;
+  top: 100rpx;
+  left: 190rpx;
+  color: #fff;
+  font-size: 33rpx;
+}
+.count {
+  color: #fe0103
+}
+/* 产品 */
+.product-wrap {
+  display: flex;
+  flex-direction: row; 
+  align-items: center;  
+  justify-content: space-between; 
+  box-sizing: border-box; 
+}
+
+.product {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.product-img {
+  width: 340rpx;
+  height: 200rpx
+}
+.product1-img {
+  width: 340rpx;
+  height: 200rpx;
+  padding-right: 30rpx
+}
+
+/* pages/gundong/gundong.wxss */
+.example {
+  display: block;
+  width: 100%;
+  padding: 0 80rpx;
+  color: #333333;
+  white-space: nowrap;
+  overflow: hidden
+}
+
+.marquee_box {
+  width: 100%;
+  position: relative;
+}
+
+.marquee_text {
+  white-space: nowrap;
+  position: absolute;
+  top: 0;
+}
